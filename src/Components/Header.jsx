@@ -15,12 +15,12 @@ const Header = ({ isDark, setIsDark }) => {
             onClick={(e) => {
               setIsDark(!isDark);
             }}
-            className={`text-black transition duration-300 cursor-pointer ${
+            className={`text-black transition duration-200 cursor-pointer ${
               isDark ? "opacity-0" : "opacity-100"
             } `}
           />
           <BsSunFill
-            className={`text-white transition duration-300 cursor-pointer ${
+            className={`text-white transition duration-200 cursor-pointer ${
               !isDark ? "opacity-0" : "opacity-100"
             } absolute`}
             onClick={(e) => {
