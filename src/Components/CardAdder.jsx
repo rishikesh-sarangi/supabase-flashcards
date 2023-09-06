@@ -11,7 +11,7 @@ const CardAdder = ({ searchQuery }) => {
         .select("*")
         .order("time", { ascending: true });
       if (!data) alert("There was an error in getting the data");
-      console.log(error);
+      // console.log(error);
       setCards(data);
     }
     fetchFlashcards();

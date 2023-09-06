@@ -5,7 +5,7 @@ import Header from "./Components/Header";
 
 function App() {
   // console.log(process.env.SUPABASE_KEY);
-  const [isDark, setIsDark] = useState(false);
+  const [isDark, setIsDark] = useState(true);
   return (
     <>
       <main className={` h-full ${isDark ? "dark" : ""}`}>

@@ -48,7 +48,7 @@ const Card = ({ title, question, answer, hint1, hint2, cardID }) => {
                 {hint1}
               </span>
               <span
-                className={`px-3 py-1 mb-2 mr-2 text-sm font-semibold text-gray-700 bg-white rounded-full ${
+                className={`dark:bg-slate-800 dark:text-white px-3 py-1 mb-2 mr-2 text-sm font-semibold text-gray-700 bg-white rounded-full ${
                   hint2 === "" ? "hidden" : "inline-block "
                 }`}
               >
