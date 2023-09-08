@@ -1,5 +1,5 @@
 import { useState } from "react";
-import supabase from "../supabase";
+import supabase from "../../supabase";
 
 const AddModal = ({ onClose }) => {
   const [formData, setFormData] = useState({

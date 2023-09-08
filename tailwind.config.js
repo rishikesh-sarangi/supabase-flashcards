@@ -10,6 +10,7 @@ module.exports = {
       animation: {
         "flip-in-ver-left": "flip-in-ver-left 0.5s linear   both",
         "flip-in-ver-right": "flip-in-ver-right 0.5s linear   both",
+        "roll-out-blurred-left": "roll-out-blurred-left 0.65s linear   both",
       },
       keyframes: {
         "flip-in-ver-left": {
@@ -30,6 +31,18 @@ module.exports = {
           to: {
             transform: "rotateY(0)",
             opacity: "1",
+          },
+        },
+        "roll-out-blurred-left": {
+          "0%": {
+            transform: "translateX(0) rotate(0deg)",
+            filter: "blur(0)",
+            opacity: "1",
+          },
+          to: {
+            transform: "translateX(-1000px) rotate(-720deg)",
+            filter: "blur(50px)",
+            opacity: "0",
           },
         },
       },

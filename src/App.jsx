@@ -1,18 +1,14 @@
 import { useState } from "react";
-import Add_Search from "./Components/Add_Search";
-
-import Header from "./Components/Header";
+import Main from "./Pages/Main";
+import Landing from "./Pages/Landing";
 
 function App() {
-  // console.log(process.env.SUPABASE_KEY);
   const [isDark, setIsDark] = useState(true);
   return (
     <>
       <main className={` h-full ${isDark ? "dark" : ""}`}>
-        <section className="min-h-screen dark:dark:bg-slate-900 bg-slate-100">
-          <Header isDark={isDark} setIsDark={setIsDark} />
-          <Add_Search />
-        </section>
+        <Landing />
+        {/* <Main isDark={isDark} setIsDark={setIsDark} /> */}
       </main>
     </>
   );

@@ -1,4 +1,4 @@
-import { BsLightningCharge, BsMoonFill, BsSunFill } from "react-icons/bs";
+import { BsFillLightningFill, BsMoonFill, BsSunFill } from "react-icons/bs";
 
 const Header = ({ isDark, setIsDark }) => {
   return (
@@ -8,7 +8,7 @@ const Header = ({ isDark, setIsDark }) => {
           <span className="font-extrabold tracking-widest text-teal-500 uppercase font-NotoSans animate-pulse">
             Memory Pulse
           </span>
-          <BsLightningCharge className="mb-1 text-teal-500" />
+          <BsFillLightningFill className="mb-1 text-teal-500" />
         </div>
         <div className="flex">
           <BsMoonFill

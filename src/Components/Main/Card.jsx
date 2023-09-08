@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { AiFillDelete } from "react-icons/ai";
-import supabase from "../supabase";
+import supabase from "../../supabase";
 
 const Card = ({ title, question, answer, hint1, hint2, cardID }) => {
   const [clickCardID, setClickCardID] = useState(null);
@@ -16,11 +16,13 @@ const Card = ({ title, question, answer, hint1, hint2, cardID }) => {
         onClick={() => setClickCardID(cardID !== clickCardID ? cardID : null)}
       >
         {clickCardID === cardID ? (
-          <div className="flex items-center justify-center w-full h-full text-xl font-bold bg-green-400 rounded font-Montserrat dark:bg-green-600">
-            {answer}
+          <div className="flex items-center justify-center w-full h-full text-xl font-bold bg-green-400 rounded font-Montserrat dark:bg-green-600 ">
+            <div className="animate-flip-in-ver-left">{answer}</div>
           </div>
         ) : (
-          <div className="flex flex-col justify-center">
+          <div
+            className={`flex flex-col justify-center animate-flip-in-ver-right`}
+          >
             <div className="px-6 py-4">
               <div className="flex items-start justify-between">
                 <div className="mb-2 text-xl font-bold text-white font-Karla dark:text-black">
